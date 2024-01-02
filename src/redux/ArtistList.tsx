@@ -46,7 +46,7 @@ const artistListSlice = createSlice({
         deleteArtist: (state = initialState, action: PayloadAction<ArtistDataType>) => {
             const id: string | number | unknown = action.payload
             const existingItem = state.artistList.find(item => item.id === id)
-
+            console.log(existingItem)
             if (existingItem) {
                 state.artistList = state.artistList.filter(item => item.id !== id)
                 state.totalList--

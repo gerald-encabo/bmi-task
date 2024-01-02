@@ -23,7 +23,7 @@ const AddArtistForm = ({setOpen}: AddArtistType) => {
     if (name !== "" && nationality !== "" && age !== 0) {
         dispatch(
             listActions.addArtist({
-                id: totalCount,
+                id: totalCount+1,
                 name: name,
                 nationality: nationality,
                 age: age,
