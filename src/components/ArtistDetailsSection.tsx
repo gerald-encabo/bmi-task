@@ -34,7 +34,11 @@ const ArtistDetailsSection = () => {
           <option value={3}>3</option>
         </select>
         <div className="icon">
-          <Link to={`/artist-music-details/${artist.count}`}>
+          <Link 
+            to={`/artist-music-details/${artist.count}`}
+            target="_blank" 
+            rel="noopener noreferrer" 
+          >
             <PiArrowSquareIn />
           </Link>
         </div>

@@ -1,9 +1,24 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { TypeState, ArtistDataType } from "@/types/TypeLists";
 
+const artistList = localStorage.getItem('artistList') !== null
+    ? JSON.parse(localStorage.getItem('artistList') || '{}')
+    : []
+
+const totalList = localStorage.getItem('totalList') !== null 
+    ? JSON.parse(localStorage.getItem('totalList') || '{}')
+    : 0
+
+const setItemFunc = (artistList: ArtistDataType[], totalList: number) => {
+    localStorage.setItem('artistList', JSON.stringify(artistList))
+    localStorage.setItem('totalList', JSON.stringify(totalList))
+}
+
 const initialState: TypeState = {
-    artistList: [],
-    totalList: 0,
+    // artistList: [],
+    // totalList: 0,
+    artistList: artistList,
+    totalList: totalList,
 }
 
 const artistListSlice = createSlice({
@@ -25,6 +40,7 @@ const artistListSlice = createSlice({
                 })
                 state.totalList++
             }
+            setItemFunc(state.artistList.map((item) => item), state.totalList);
         },
 
         deleteArtist: (state = initialState, action: PayloadAction<ArtistDataType>) => {
@@ -35,7 +51,10 @@ const artistListSlice = createSlice({
                 state.artistList = state.artistList.filter(item => item.id !== id)
                 state.totalList--
             }
+
+            setItemFunc(state.artistList.map((item) => item), state.totalList);
         }
+
     }
 })
 

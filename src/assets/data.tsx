@@ -120,7 +120,25 @@ export const artistList: Array<ArtistDataType> = [
                 producer: "Universal Music Publishing Group",
                 productionDate: "December 18, 2020",
                 awards: "Grammy Awards"
-            }
+            },
+            {
+                songNum: 2,
+                songTitle: "Blank Space",
+                songLyrics: "Nice to meet you, where you been I could show you incredible things Magic, madness, heaven, sin Saw you there and I thought Oh, my God, look at that face You look like my next mistake Love's a game, wanna play?",
+                composer: "Taylor Swift",
+                producer: "Universal Music Publishing Group",
+                productionDate: "May 8, 2022",
+                awards: "Grammy Awards"
+            },
+            {
+                songNum: 3,
+                songTitle: "Bad Blood",
+                songLyrics: "Now we got problems And I don't think we can solve 'em You made a really deep cut And baby, now we got bad blood (hey!)",
+                composer: "Taylor Swift",
+                producer: "Universal Music Publishing Group",
+                productionDate: "October 18, 2023",
+                awards: "Grammy Awards"
+            },
         ]
     },
     {
@@ -141,10 +159,19 @@ export const artistList: Array<ArtistDataType> = [
             {
                 songNum: 2,
                 songTitle: "Laugh Now Cry Later",
-                songLyrics: "Sometimes we laugh and sometimes we cry, but I guess you know now, baby I took a half and she took the whole thing, slow down, baby (baby) We took a trip, now we on your block and it's like a ghost town, baby Where do these niggas be at when they say they doin' all this and all that?",
+                songLyrics: "Sometimes we laugh and sometimes we cry, but I guess you know now, baby I took a half and she took the whole thing, slow down, baby (baby) We took a trip, now we on your block and it's like a ghost town, baby Where do these be at when they say they doin' all this and all that?",
                 composer: "Drake",
                 producer: "OVO Sound",
                 productionDate: "May 4, 2022",
+                awards: "Grammy Awards"
+            },
+            {
+                songNum: 3,
+                songTitle: "Toosie Slide",
+                songLyrics: "Black leather gloves, Buckles on the jacket, it's Alyx shit Nike crossbody, got a piece in it Got a dance, but it's really on some street shit I'ma show you how to get it",
+                composer: "Drake",
+                producer: "OVO Sound",
+                productionDate: "December 24, 2023",
                 awards: "Grammy Awards"
             }
         ]
