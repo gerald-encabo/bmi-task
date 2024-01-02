@@ -1,0 +1,60 @@
+@import '@/styles/colors.scss';
+
+.artist-music {
+    width: calc(100% - 50px);
+    height: auto;
+    border: 2px solid $primaryBorder !important;
+    background-color: $background !important;
+    border-radius: 5px;
+    position: absolute;
+    top: 18px;
+    right: 20px;
+
+    &-control {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        margin: 50px 30px 20px;
+        background-color: $light;
+        border-radius: 5px;
+        justify-content: space-between;
+    }
+
+    &-lyrics {
+        margin: 20px 30px;
+        background-color: #FFF;
+        color: #000;
+        border-radius: 5px;
+    }
+
+    &-lyrics-card,
+    &-info-card {
+        padding: 40px;
+    }
+
+    &-info {
+        margin: 20px 30px;
+        background-color: #FFF;
+        color: #000;
+        border-radius: 5px;
+    }
+
+    &-select {
+        padding: 0;
+        font-size: 15px;
+    }
+
+    .icon {
+        color: $dark;
+        cursor: pointer;
+        font-size: 30px;
+    }
+
+    .title-container {
+        border: 2px solid $primary !important;
+        background-color: $primary !important;
+    }
+    title-container:not(:first-child) {
+        color: $dark !important;
+    }
+}

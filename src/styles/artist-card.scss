@@ -1,0 +1,14 @@
+@import '@/styles/colors.scss';
+
+.artist-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+
+    &-details {
+        word-spacing: normal;
+        line-height: 80%;
+    }
+}

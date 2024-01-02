@@ -1,0 +1,12 @@
+@import '@/styles/colors.scss';
+
+.title-container {
+    width: auto;
+    border: 2px solid $primary;
+    background-color: $primary;
+    border-radius: 5px;
+    position: absolute;
+    overflow: hidden;
+    margin: 1px;
+    padding: 0 5px;
+}

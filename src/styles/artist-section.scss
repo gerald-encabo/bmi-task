@@ -1,0 +1,28 @@
+@import '@/styles/colors.scss';
+
+.artist-section {
+    width: 100%;
+    height: 100%;
+
+    &-wrapper {
+        margin: 20px 30px;
+        background-color: $light;
+        color: $dark;
+        border-radius: 5px;
+    }
+
+    &-wrapper:hover {
+        cursor: pointer;
+    }
+
+    .active {
+        background-color: $secondary;
+        border: 2px solid $secondaryBorder;
+
+        .title-container {
+            background-color: $secondaryBorder;
+            border: 2px solid $secondaryBorder;
+            color: $light;
+        }
+    }
+}

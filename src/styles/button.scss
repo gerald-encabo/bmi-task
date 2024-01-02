@@ -1,0 +1,11 @@
+@import '@/styles/colors.scss';
+
+button {
+    background-color: $light;
+    color: $dark;
+    padding: 15px 20px;
+    border-radius: 5px;
+    margin: 0 20px;
+    border: none;
+    cursor: pointer;
+}
