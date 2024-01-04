@@ -23,7 +23,7 @@ const ArtistListSection = () => {
   const dispatch = useDispatch();
 
   const deleteArtist = () => {
-    dispatch(listActions.deleteArtist(count))
+    dispatch(listActions.deleteArtist(match))
   }
 
   useEffect(() => {
@@ -43,12 +43,12 @@ const ArtistListSection = () => {
                     <div
                       key={key} 
                       onClick={() => { 
-                        setCount(lists.id)
-                        setMatch(key) 
+                        setCount(key)
+                        setMatch(lists.id)
                       }}
                       //className="artist-section-wrapper"
                       //className={`artist-section-wrapper ${ key === count ? 'active' : "" }`}
-                      className={`artist-section-wrapper ${ key === match ? 'active' : "" }`}
+                      className={`artist-section-wrapper ${ key === count ? 'active' : "" }`}
                     >
                       <Title heading="Artist Section" />
                       <ArtistCard data={lists} />
