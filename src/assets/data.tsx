@@ -75,7 +75,7 @@ export const artistList: Array<ArtistDataType> = [
         id: 2,
         name: "Ed Sheeran",
         nationality: "British",
-        age: 19,
+        age: 32,
         songs: [
             {
                 songNum: 1,
@@ -110,7 +110,7 @@ export const artistList: Array<ArtistDataType> = [
         id: 3,
         name: "Taylor Swift",
         nationality: "American",
-        age: 19,
+        age: 34,
         songs: [
             {
                 songNum: 1,
@@ -145,7 +145,7 @@ export const artistList: Array<ArtistDataType> = [
         id: 4,
         name: "Drake",
         nationality: "Canadian",
-        age: 19,
+        age: 37,
         songs: [
             {
                 songNum: 1,

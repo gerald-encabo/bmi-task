@@ -15,8 +15,6 @@ const setItemFunc = (artistList: ArtistDataType[], totalList: number) => {
 }
 
 const initialState: TypeState = {
-    // artistList: [],
-    // totalList: 0,
     artistList: artistList,
     totalList: totalList,
 }
@@ -40,13 +38,14 @@ const artistListSlice = createSlice({
                 })
                 state.totalList++
             }
+
             setItemFunc(state.artistList.map((item) => item), state.totalList);
         },
 
         deleteArtist: (state = initialState, action: PayloadAction<ArtistDataType>) => {
             const id: string | number | unknown = action.payload
             const existingItem = state.artistList.find(item => item.id === id)
-            console.log(existingItem)
+
             if (existingItem) {
                 state.artistList = state.artistList.filter(item => item.id !== id)
                 state.totalList--

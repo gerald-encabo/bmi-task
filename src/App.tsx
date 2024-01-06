@@ -6,7 +6,7 @@ import Routers from "@/routes/Routers"
 function App() {
 
   return (
-    <div className='mainPage'>
+    <div>
       <Suspense fallback={<Spinner />}>
         <Routers />
       </Suspense>

@@ -44,8 +44,8 @@ const ArtistDetailsSection = () => {
         </div>
       </div>
       {
-        searchArtist.map((list: ArtistDataType) => (
-            list.songs.map((list: SongsTypes, key: number) => (
+        searchArtist.map((lists: ArtistDataType) => (
+            lists.songs.map((list: SongsTypes, key: number) => (
               changeLyrics === list.songNum ? (
                 <div key={key}>
                   <div className="artist-details-lyrics">

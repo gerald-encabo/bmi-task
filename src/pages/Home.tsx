@@ -9,15 +9,17 @@ const Home = () => {
 
   return (
     <ArtistProvider>
+      <div className='mainPage'>
         {
-            artistList.map((lists: ArtistDataType, key: number) => (
-              <div key={key}>
+          artistList.map((lists: ArtistDataType, key: number) => (
+            <div key={key}>
                 <ImplementData data={lists} />
               </div>
             ))
-        }
+          }
         <ArtistListSection />
         <ArtistDetailsSection />
+      </div>
     </ArtistProvider>
   )
 }
